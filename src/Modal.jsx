@@ -16,9 +16,9 @@ const Modal = ({ isModalOpen, closeModal, openModal }) => {
     e.preventDefault();
 
     if (
-      !formData.username ||
-      !formData.email ||
-      !formData.phone ||
+      !formData.username &&
+      !formData.email &&
+      !formData.phone &&
       !formData.dob
     ) {
       alert("Please fill in all fields.");
